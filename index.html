@@ -4,44 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@400;600;700&family=Raleway:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="" class="">
+    <header class="page-header">
+      <nav class="page-nav">
+        <a href="" class="link logo-link">
           <img
             src="./Images/header-logo.svg"
             alt="логотип"
             width="69"
             height="55"
+            class="logo-icon"
           />
         </a>
-        <ul>
-          <li>
-            <a href="">Про нас</a>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="" class="menu-link link">Про нас</a>
           </li>
-          <li>
-            <a href="">Послуги та ціни</a>
+          <li class="menu-item">
+            <a href="" class="menu-link link">Послуги та ціни</a>
           </li>
-          <li><a href=""></a>Майстри</li>
-          <li><a href=""></a>Контакти</li>
+          <li class="menu-item">
+            <a href="" class="menu-link link">Майстри</a>
+          </li>
+          <li class="menu-item">
+            <a href="" class="menu-link link">Контакти</a>
+          </li>
         </ul>
       </nav>
-      <a href="tel:+30441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запис</button>
+      <a href="tel:+30441111111" class="phone-number link">+38 044 111 11 11</a>
+      <button type="button" class="modal-btn">онлайн-запис</button>
     </header>
     <main>
       <section>
-        <div>
-          <ul>
-            <li><a href="" lang="en">Instagram</a></li>
-            <li><a href="" lang="en">Youtube</a></li>
+        <div class="hero-left-side">
+          <ul class="media-list">
+            <li class="media-list-item">
+              <a href="" lang="en" class="media-list-link link">Instagram</a>
+            </li>
+            <li class="media-list-item">
+              <a href="" lang="en" class="media-list-link link">Youtube</a>
+            </li>
           </ul>
         </div>
-        <div>
-          <p lang="en">A hair salon for men in Kyiv</p>
-          <h1 lang="en">BarberShop</h1>
-          <p>
+        <div class="hero-right-side">
+          <p lang="en" class="suptitle suptitle-theme-dark">
+            A hair salon for men in Kyiv
+          </p>
+          <h1 lang="en" class="main-title">BarberShop</h1>
+          <p class="section-description">
             Ми експерти в модних чоловічих стрижках. Працюємо швидко, обережно
             та зі смаком.
           </p>
@@ -49,7 +67,7 @@
       </section>
       <section>
         <ul>
-          <li>
+          <li class="">
             <img
               src="./Images/about/about1.jpg"
               alt="барбер бриє клієнта"
@@ -57,7 +75,7 @@
               height="445"
             />
           </li>
-          <li>
+          <li class="">
             <img
               src="./Images/about/about2.jpg"
               alt="барбер бриє клієнта"
@@ -66,24 +84,30 @@
             />
           </li>
         </ul>
-        <p>Про нас</p>
-        <h2>Кращий Барбершоп твого міста</h2>
-        <p>
+        <p class="suptitle suptitle-theme-light">Про нас</p>
+        <h2 class="section-title section-title-theme-light">
+          Кращий Барбершоп твого міста
+        </h2>
+        <p class="section-description section-description-theme-light">
           Якщо ти хочеш додати до свого образу більше впевненості – тобі точно
           до нас.
         </p>
-        <p>
+        <p
+          class="section-description section-description-theme-light description-about"
+        >
           Ми команда, яка ніколи не зупиняється на досягнутому та прагне змін. І
           коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш бути
           колишнім. Ми команда, яка завжди з клієнтами "на одній хвилі". Тому,
           ми завжди готові вдосконалювати кожного, хто до нас приходить!
         </p>
-        <button type="button">онлайн-запис</button>
+        <button type="button" class="modal-btn">онлайн-запис</button>
       </section>
       <section>
-        <p>Проведи час в компанії кращих майстрів</p>
-        <h2>Послуги та ціни</h2>
-        <table>
+        <p class="suptitle suptitle-theme-dark">
+          Проведи час в компанії кращих майстрів
+        </p>
+        <h2 class="section-title section-title-theme-dark">Послуги та ціни</h2>
+        <table class="section-description section-description-theme-dark">
           <tr>
             <td>Чоловіча стрижка</td>
             <td>від 300 грн.</td>
@@ -101,7 +125,7 @@
             <td>від 200 грн.</td>
           </tr>
         </table>
-        <table>
+        <table class="section-description section-description-theme-dark">
           <tr>
             <td>Стрижка у стажера</td>
             <td>від 50 грн.</td>
@@ -119,39 +143,51 @@
             <td>від 200 грн.</td>
           </tr>
         </table>
-        <button type="button">онлайн-запис</button>
+        <button type="button" class="modal-btn">онлайн-запис</button>
       </section>
       <section>
-        <ul>
-          <li>
-            <p>600 <span>+</span></p>
-            <p>Задоволених клієнтів на день</p>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <p class="advantages-number">
+              600<span class="advantages-symbol">+</span>
+            </p>
+            <p class="advantages-description">Задоволених клієнтів на день</p>
           </li>
-          <li>
-            <p>50<span>+</span></p>
-            <p>Нагород за відмінний сервіс</p>
+          <li class="advantages-item">
+            <p class="advantages-number">
+              50<span class="advantages-symbol">+</span>
+            </p>
+            <p class="advantages-description">Нагород за відмінний сервіс</p>
           </li>
-          <li>
-            <p>20<span>+</span></p>
-            <p>Найкращих майстрів Києва</p>
+          <li class="advantages-item">
+            <p class="advantages-number">
+              20<span class="advantages-symbol">+</span>
+            </p>
+            <p class="advantages-description">Найкращих майстрів Києва</p>
           </li>
-          <li>
-            <p>100<span>+</span></p>
-            <p>Подарунків постійним клієнтам</p>
+          <li class="advantages-item">
+            <p class="advantages-number">
+              100<span class="advantages-symbol">+</span>
+            </p>
+            <p class="advantages-description">Подарунків постійним клієнтам</p>
           </li>
         </ul>
         <div>
-          <p>стара традиційна школа</p>
-          <h2>Чому приходять саме до нас?</h2>
-          <p>
+          <p class="suptitle suptitle-theme-light">стара традиційна школа</p>
+          <h2 class="section-title section-title-theme-light">
+            Чому приходять саме до нас?
+          </h2>
+          <p class="section-description section-description-theme-light">
             Про нас говорять лише хороше. Але краще 1 раз побачити та відчути,
             ніж 10 разів прочитати.
           </p>
         </div>
       </section>
       <section>
-        <p>для справжніх поціновувачів атмосфери</p>
-        <h2>Наші майстри</h2>
+        <p class="suptitle suptitle-theme-light">
+          для справжніх поціновувачів атмосфери
+        </p>
+        <h2 class="section-title section-title-theme-light">Наші майстри</h2>
         <ul>
           <li>
             <img
@@ -160,8 +196,8 @@
               width="370"
               height="346"
             />
-            <h3 lang="en">John Smith</h3>
-            <p lang="en">Extreme Barber</p>
+            <h3 lang="en" class="master-name">John Smith</h3>
+            <p lang="en" class="master-rank">Extreme Barber</p>
           </li>
           <li>
             <img
@@ -170,8 +206,8 @@
               width="370"
               height="346"
             />
-            <h3 lang="en">Michele Doe</h3>
-            <p lang="en">Extreme Barber</p>
+            <h3 lang="en" class="master-name">Michele Doe</h3>
+            <p lang="en" class="master-rank">Extreme Barber</p>
           </li>
           <li>
             <img
@@ -180,14 +216,16 @@
               width="370"
               height="346"
             />
-            <h3 lang="en">Alan Black</h3>
-            <p lang="en">Extreme Barber</p>
+            <h3 lang="en" class="master-name">Alan Black</h3>
+            <p lang="en" class="master-rank">Extreme Barber</p>
           </li>
         </ul>
       </section>
       <section>
         <h2>Галерея</h2>
-        <p>Латинською мовою "барба" означає "борода"</p>
+        <p class="suptitle suptitle-theme-light">
+          Латинською мовою "барба" означає "борода"
+        </p>
         <ul>
           <li>
             <img
@@ -224,33 +262,50 @@
         </ul>
       </section>
       <section>
-        <h2>Контакти</h2>
+        <h2 class="section-title section-title-theme-dark">Контакти</h2>
         <address>
-          <ul>
+          <ul class="section-description">
             <li>
               <a
                 href="https://maps.app.goo.gl/XJGt9zjpLEkv2f9V8"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="section-description-theme-dark link"
                 >вул. Василькова, 7А Київ, 08132</a
               >
             </li>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
             <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              <a
+                href="tel:+380441111111"
+                class="section-description-theme-dark link"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:barbershop@email.com"
+                class="section-description-theme-dark"
+                >barbershop@email.com</a
+              >
             </li>
           </ul>
         </address>
-        <h3></h3>
-        <p></p>
+        <h3 class="suptitle section-title-theme-dark">Графік роботи</h3>
+        <p class="section-description section-description-theme-dark">
+          Щоденно з 9:00 до 22:00
+        </p>
       </section>
     </main>
     <footer>
       <p>&copy; Copyright 2020</p>
       <div>
-        <ul>
-          <li><a href="" lang="en">Instagram</a></li>
-          <li><a href="" lang="en">Youtube</a></li>
+        <ul class="media-list">
+          <li class="media-list-item">
+            <a href="" lang="en" class="media-list-link">Instagram</a>
+          </li>
+          <li class="media-list-item">
+            <a href="" lang="en" class="media-list-item-link">Youtube</a>
+          </li>
         </ul>
       </div>
     </footer>
