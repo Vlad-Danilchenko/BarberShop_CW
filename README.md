@@ -6,3 +6,9 @@ https://pixso.net/app/design/PHDck51EfH4BqdBAE2cHUQ?icon_type=1&page-id=0%3A1&ed
 
 оптимізація зображень: https://squoosh.app/ оптимізація зображень:
 https://tinypng.com/
+
+spriteSVG: https://icomoon.io/app/#/select
+
+https://svgomg.net
+
+https://unminify.com
