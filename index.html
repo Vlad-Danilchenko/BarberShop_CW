@@ -21,13 +21,9 @@
       <div class="container page-header-container">
         <nav class="page-nav">
           <a href="" class="link logo-link">
-            <img
-              src="./Images/header-logo.svg"
-              alt="логотип"
-              width="69"
-              height="55"
-              class="logo-icon"
-            />
+            <svg class="logo-icon" width="69" height="55">
+              <use href="./Images/sprite.svg#logo"></use>
+            </svg>
           </a>
           <ul class="menu">
             <li class="menu-item">
@@ -52,7 +48,7 @@
     </header>
     <main>
       <section>
-        <div class="container">
+        <div class="container hero-container">
           <div class="hero-left-side">
             <ul class="media-list">
               <li class="media-list-item">
@@ -178,42 +174,55 @@
           <button type="button" class="modal-btn">онлайн-запис</button>
         </div>
       </section>
-      <section>
-        <div class="container">
+
+      <!-- -------------------------ADVANTAGES-------------------------  -->
+
+      <section class="section">
+        <div class="container advantages-container">
           <ul class="advantages-list">
             <li class="advantages-item">
-              <p class="advantages-number">
-                600<span class="advantages-symbol">+</span>
+              <p class="advantages-item-number">
+                600<span class="advantages-item-symbol">+</span>
               </p>
-              <p class="advantages-description">Задоволених клієнтів на день</p>
+              <p class="advantages-item-description">
+                Задоволених клієнтів на день
+              </p>
             </li>
             <li class="advantages-item">
-              <p class="advantages-number">
-                50<span class="advantages-symbol">+</span>
+              <p class="advantages-item-number">
+                50<span class="advantages-item-symbol">+</span>
               </p>
-              <p class="advantages-description">Нагород за відмінний сервіс</p>
+              <p class="advantages-item-description">
+                Нагород за відмінний сервіс
+              </p>
             </li>
             <li class="advantages-item">
-              <p class="advantages-number">
-                20<span class="advantages-symbol">+</span>
+              <p class="advantages-item-number">
+                20<span class="advantages-item-symbol">+</span>
               </p>
-              <p class="advantages-description">Найкращих майстрів Києва</p>
+              <p class="advantages-item-description">
+                Найкращих майстрів Києва
+              </p>
             </li>
             <li class="advantages-item">
-              <p class="advantages-number">
-                100<span class="advantages-symbol">+</span>
+              <p class="advantages-item-number">
+                100<span class="advantages-item-symbol">+</span>
               </p>
-              <p class="advantages-description">
+              <p class="advantages-item-description">
                 Подарунків постійним клієнтам
               </p>
             </li>
           </ul>
-          <div>
+          <div class="advantages-content-wrapper">
             <p class="suptitle suptitle-theme-light">стара традиційна школа</p>
-            <h2 class="section-title section-title-theme-light">
+            <h2
+              class="section-title section-title-theme-light advantages-title"
+            >
               Чому приходять саме до нас?
             </h2>
-            <p class="section-description section-description-theme-light">
+            <p
+              class="section-description section-description-theme-light advantages-description"
+            >
               Про нас говорять лише хороше. Але краще 1 раз побачити та відчути,
               ніж 10 разів прочитати.
             </p>
@@ -242,6 +251,37 @@
               <div class="master-card-content-wrapper">
                 <h3 lang="en" class="master-name">John Smith</h3>
                 <p lang="en" class="master-rank">Extreme Barber</p>
+
+                <ul class="social-list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="masters-item">
@@ -254,6 +294,36 @@
               <div class="master-card-content-wrapper">
                 <h3 lang="en" class="master-name">Michele Doe</h3>
                 <p lang="en" class="master-rank">Extreme Barber</p>
+                <ul class="social-list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="masters-item">
@@ -266,6 +336,36 @@
               <div class="master-card-content-wrapper">
                 <h3 lang="en" class="master-name">Alan Black</h3>
                 <p lang="en" class="master-rank">Extreme Barber</p>
+                <ul class="social-list">
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list-item">
+                    <a href="" class="social-list-link">
+                      <svg class="social-list-icon" width="20" height="20">
+                        <use href="./Images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -353,8 +453,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-container">
         <p>&copy; Copyright 2020</p>
         <div>
           <ul class="media-list">
