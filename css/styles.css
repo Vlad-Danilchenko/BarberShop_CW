@@ -7,6 +7,8 @@
   --secondary-text-color-theme-light: rgba(85, 85, 85, 1);
   --accent-color: rgba(255, 108, 0, 1);
   --suptitle-text-color-theme-dark: rgba(157, 164, 189, 0.6);
+
+  --transition-duration-and-func: 250ms linear;
 }
 
 h1,
@@ -42,7 +44,7 @@ body {
 
 /* -------------------------COMPONENTS------------------------- */
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -60,15 +62,23 @@ body {
 
   cursor: pointer;
   padding: 12px 20px;
+  min-width: 160px;
 
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   background-color: transparent;
+
+  transition:
+    color var(--transition-duration-and-func),
+    background-color var(--transition-duration-and-func);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
-  color: rgba(255, 255, 255, 1);
+  color: var(--secondary-text-color-theme-dark);
+}
+.modal-btn-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
 }
 
 .media-list-link {
@@ -145,7 +155,7 @@ body {
 }
 
 .section-title-theme-dark {
-  /* color: var(--secondary-text-color-theme-dark); */
+  color: var(--secondary-text-color-theme-dark);
   margin-bottom: 44px;
 }
 
@@ -161,6 +171,8 @@ body {
 .page-header {
   padding-bottom: 32px;
   padding-top: 32px;
+  position: absolute;
+  width: 100%;
 }
 
 .page-header-container {
@@ -174,7 +186,7 @@ body {
 }
 
 .logo-link {
-  margin-right: 71px;
+  margin-right: 55px;
 }
 
 .menu {
@@ -183,15 +195,19 @@ body {
 }
 
 .menu-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 10px;
 }
 
 .menu-link {
-  /* color: rgba(255, 255, 255, 1); */
+  color: var(--secondary-text-color-theme-dark);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.33;
   letter-spacing: 10%;
+
+  padding: 15px;
+
+  transition: color var(--transition-duration-and-func);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -199,7 +215,7 @@ body {
 }
 
 .phone-number {
-  /* color: rgba(255, 255, 255, 1); */
+  color: var(--secondary-text-color-theme-dark);
 
   font-size: 12px;
   font-weight: 600;
@@ -207,7 +223,10 @@ body {
   letter-spacing: 10%;
 
   margin-left: auto;
-  margin-right: 40px;
+  margin-right: 25px;
+  padding: 15px;
+
+  transition: color var(--transition-duration-and-func);
 }
 .phone-number:hover,
 .phone-number:focus {
@@ -244,7 +263,7 @@ body {
 }
 
 .main-title {
-  /* color: rgba(255, 255, 255, 1); */
+  color: var(--secondary-text-color-theme-dark);
 
   font-family: var(--secondary-font);
   font-size: 72px;
@@ -305,7 +324,7 @@ body {
   margin-bottom: 50px;
 }
 .table-prices {
-  /* flex-grow: 1; */
+  flex-grow: 1;
   padding: 30px 40px;
 }
 
@@ -331,7 +350,7 @@ body {
 }
 
 .table-prices td:first-child {
-  width: 100%;
+  /* width: 100%; */
   /* flex-grow: 1; */
 }
 
@@ -343,12 +362,24 @@ body {
   background-color: var(--primary-text-color-theme-dark);
 }
 
+.section-prices-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 /* -------------------------/PRICES------------------------- */
 
 /* -------------------------ADVANTAGES------------------------- */
 
 .advantages-container {
   display: flex;
+}
+
+.advantages-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
 }
 
 .advantages-item {
@@ -364,6 +395,14 @@ body {
   height: 133px;
   text-align: center;
   background-color: #f7f7f7;
+}
+
+.advantages-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.advantages-item:nth-child(even) {
+  margin-top: 35px;
 }
 
 .advantages-item-number {
@@ -410,11 +449,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  /* flex-basis: calc((100% * 60px) / 3); */
 }
 .masters-item {
-  width: 370px;
-  /* flex-basis: calc((100% * 60px) / 3); */
+  /* width: 370px; */
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .master-card-content-wrapper {
@@ -462,6 +500,8 @@ body {
 
 .social-list-icon {
   fill: #303030;
+
+  transition: fill var(--transition-duration-and-func);
 }
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
@@ -481,9 +521,31 @@ body {
   gap: 30px;
 }
 .galery-item {
-  width: 270px;
+  /* width: 270px; */
+  flex-basis: calc((100% - 90px) / 4);
 }
 /* -------------------------/GALERY------------------------- */
+
+/* -------------------------FeedbackAndContact------------------------- */
+
+.booking-and-contact-section {
+  background-color: #191c26;
+}
+
+.booking-and-contact-container {
+  display: flex;
+}
+
+.booking-form {
+  max-width: 657px;
+}
+
+.address-contant-wrapper {
+  padding-left: 100px;
+  margin-right: auto;
+}
+
+/* -------------------------/FeedbackAndContact------------------------- */
 
 /* -------------------------Footer------------------------- */
 

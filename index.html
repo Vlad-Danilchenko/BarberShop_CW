@@ -43,7 +43,9 @@
         <a href="tel:+30441111111" class="phone-number link"
           >+38 044 111 11 11</a
         >
-        <button type="button" class="modal-btn">онлайн-запис</button>
+        <button type="button" class="modal-btn modal-btn-theme-dark">
+          онлайн-запис
+        </button>
       </div>
     </header>
     <main>
@@ -171,7 +173,12 @@
               </tr>
             </table>
           </div>
-          <button type="button" class="modal-btn">онлайн-запис</button>
+          <button
+            type="button"
+            class="modal-btn modal-btn-theme-dark section-prices-btn"
+          >
+            онлайн-запис
+          </button>
         </div>
       </section>
 
@@ -416,40 +423,79 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2 class="section-title section-title-theme-dark">Контакти</h2>
-          <address>
-            <ul class="section-description">
-              <li>
-                <a
-                  href="https://maps.app.goo.gl/XJGt9zjpLEkv2f9V8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="section-description-theme-dark link"
-                  >вул. Василькова, 7А Київ, 08132</a
-                >
-              </li>
-              <li>
-                <a
-                  href="tel:+380441111111"
-                  class="section-description-theme-dark link"
-                  >+38 044 111 11 11</a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto:barbershop@email.com"
-                  class="section-description-theme-dark"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-          </address>
-          <h3 class="suptitle section-title-theme-dark">Графік роботи</h3>
-          <p class="section-description section-description-theme-dark">
-            Щоденно з 9:00 до 22:00
-          </p>
+
+      <!-- /* -------------------------FeedbackAndContact------------------------- */
+ -->
+
+      <section class="section booking-and-contact-section">
+        <div class="container booking-and-contact-container">
+          <form class="booking-form">
+            <p class="section-title section-title-theme-dark">Онлайн-запис</p>
+            <label class="form-field">
+              <span class="form-field-label">Ім'я*</span>
+              <input
+                type="text"
+                name="user-name"
+                required
+                class="form-input"
+                pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ\s]+"
+                minlength="2"
+              />
+            </label>
+            <label class="form-field">
+              <span class="form-field-label">Телефон*</span>
+              <input
+                type="tel"
+                name="user-phone"
+                required
+                class="form-input"
+                pattern="^\+380\d{9}$"
+                title="+380XXXXXXXXX"
+              />
+            </label>
+            <label class="form-field">
+              <span class="form-field-label">Повідомлення</span>
+              <textarea name="user-message" class="form-massage"></textarea>
+            </label>
+
+            <button type="submit" class="modal-btn modal-btn-theme-dark">
+              Надіслати
+            </button>
+          </form>
+          <div class="address-contant-wrapper">
+            <h2 class="section-title section-title-theme-dark">Контакти</h2>
+            <address>
+              <ul class="section-description">
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/XJGt9zjpLEkv2f9V8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="section-description-theme-dark link"
+                    >вул. Василькова, 7А Київ, 08132</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:+380441111111"
+                    class="section-description-theme-dark link"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:barbershop@email.com"
+                    class="section-description-theme-dark"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <h3 class="suptitle section-title-theme-dark">Графік роботи</h3>
+            <p class="section-description section-description-theme-dark">
+              Щоденно з 9:00 до 22:00
+            </p>
+          </div>
         </div>
       </section>
     </main>
