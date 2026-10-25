@@ -1,0 +1,25 @@
+.about-container {
+  display: flex;
+}
+
+.about-list-img {
+  display: flex;
+  gap: 30px;
+}
+
+.about-content-wrapper {
+  padding-left: 64px;
+}
+
+.section-description-about {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.description-about {
+  font-size: 14px;
+  line-height: 1.86;
+
+  width: 466px;
+  margin-bottom: 40px;
+}

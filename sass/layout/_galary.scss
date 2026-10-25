@@ -1,0 +1,13 @@
+.galery-suptitle {
+  margin-bottom: 44px;
+}
+
+.galery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.galery-item {
+  /* width: 270px; */
+  flex-basis: calc((100% - 90px) / 4);
+}

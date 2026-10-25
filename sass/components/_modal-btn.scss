@@ -1,0 +1,28 @@
+.modal-btn {
+  /* color: rgba(255, 255, 255, 1); */
+
+  @include font(12px, 600, 16px, 9%);
+  text-transform: uppercase;
+
+  cursor: pointer;
+  padding: 12px 20px;
+  min-width: 160px;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+
+  transition:
+    color var(--transition-duration-and-func),
+    background-color var(--transition-duration-and-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color-theme-dark);
+  }
+}
+
+.modal-btn-theme-dark {
+  color: var(--secondary-text-color-theme-dark);
+}

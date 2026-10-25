@@ -1,0 +1,27 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/section-bgc-theme-dark';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/sections';
+@import './base/container';
+
+@import './components/modal-btn';
+@import './components/mobile-menu';
+@import './components/media-list-link';
+@import './components/section-title';
+@import './components/suptitle';
+@import './components/section-description';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/prices';
+@import './layout/advantages';
+@import './layout/masters';
+@import './layout/galary';
+@import './layout/booking';
+@import './layout/contact';
+@import './layout/booking-and-contact-container';
+@import './layout/footer';

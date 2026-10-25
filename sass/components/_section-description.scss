@@ -1,0 +1,13 @@
+.section-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 2%;
+}
+
+.section-description-theme-dark {
+  color: var(--primary-text-color-theme-dark);
+}
+.section-description-theme-light {
+  color: var(--secondary-text-color-theme-light);
+}

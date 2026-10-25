@@ -1,0 +1,128 @@
+@media screen and (max-width: 1199px) {
+  .phone-number {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+
+  .page-header__modal-btn {
+    display: none;
+  }
+
+  .mobile-menu-open {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 40px;
+    // line-height: 0;
+  }
+}
+
+.page-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: absolute;
+  width: 100%;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: teal;
+}
+
+.mobile-menu-open {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 40px;
+  // line-height: 0;
+}
+
+@media screen and (min-width: 767px) {
+  .mobile-menu-open {
+    display: none;
+  }
+
+  .page-header-container {
+    justify-content: start;
+  }
+
+  .page-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
+  .logo__link {
+    margin-right: 55px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 12px;
+  }
+
+  .menu__link {
+    color: var(--secondary-text-color-theme-dark);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 10%;
+
+    padding: 5px;
+
+    transition: color var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__link {
+    margin-right: 65px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  .page-header {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .phone-number {
+    color: var(--secondary-text-color-theme-dark);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: 10%;
+
+    margin-right: 25px;
+    padding: 15px;
+
+    transition: color var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
