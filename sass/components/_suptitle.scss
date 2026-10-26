@@ -1,8 +1,5 @@
 .suptitle {
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 1.36;
-  letter-spacing: 10%;
+  @include font(11px, 600, 15px, 10%);
   text-transform: uppercase;
 
   display: flex;
@@ -17,7 +14,7 @@
   }
 }
 
-.suptitle-theme-dark {
+.suptitle--dark {
   color: var(--suptitle-text-color-theme-dark);
 
   &::before {
@@ -25,7 +22,7 @@
   }
 }
 
-.suptitle-theme-light {
+.suptitle--light {
   color: var(--primary-text-color-theme-light);
 
   &::before {

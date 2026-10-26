@@ -33,8 +33,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  background-color: teal;
 }
 
 .mobile-menu-open {
@@ -45,7 +43,7 @@
   // line-height: 0;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .mobile-menu-open {
     display: none;
   }
