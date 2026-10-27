@@ -648,6 +648,9 @@ body {
     letter-spacing: 2%;
     margin-bottom: 20px;
   }
+  .about__description {
+    max-width: 454px;
+  }
 }
 .prices-section {
   background-image: url(../Images/prices/img.png);

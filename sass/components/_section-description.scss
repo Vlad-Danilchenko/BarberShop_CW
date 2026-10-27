@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .section-description {
   @include font(16px, 400, 26px, 2%);
 }

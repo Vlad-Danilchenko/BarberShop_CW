@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 .mobile-menu {
   position: fixed;
   z-index: 99;

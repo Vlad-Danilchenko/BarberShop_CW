@@ -1,3 +1,5 @@
+@use '../utils/mixins' as *;
+
 @media screen and (max-width: 767px) {
   .about__list-img {
     display: none;
@@ -76,6 +78,10 @@
   .about__section-description {
     @include font(18px, 400, 30px, 2%);
     margin-bottom: 20px;
+  }
+
+  .about__description {
+    max-width: 454px;
   }
 }
 
