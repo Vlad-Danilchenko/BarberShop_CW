@@ -1,8 +1,5 @@
 .section-description {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.67;
-  letter-spacing: 2%;
+  @include font(16px, 400, 26px, 2%);
 }
 
 .section-description--dark {

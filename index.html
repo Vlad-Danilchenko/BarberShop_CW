@@ -126,40 +126,105 @@
       </section>
 
       <!-- /* -------------------------ABOUT------------------------- */ -->
-      <!-- <section class="section">
-        <div class="container about-container">
-          <ul class="about-list-img">
-            <li class="about-item">
-              <img
-                src="./Images/about/about1.jpg"
-                alt="барбер бриє клієнта"
-                width="270"
-                height="445"
-              />
+      <section class="section">
+        <div class="container about__container">
+          <ul class="about__list-img">
+            <li class="about__list-item">
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./Images/about/desktop/about-img1.webp 1x,
+                ./Images/about/desktop/about-img1@2x.webp 2x
+                "
+                type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/about/desktop/about-img1.jpg 1x,
+                    ./Images/about/desktop/about-img1@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./Images/about/tablet/about-img1.webp   1x,
+                ./Images/about/tablet/about-img1@2x.webp 2x
+                "
+                type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/about/tablet/about-img1.jpg   1x,
+                    ./Images/about/tablet/about-img1@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                
+                <img
+                  src="./Images/about/tablet/about-img1.jpg"
+                  alt="барбер бриє клієнта"
+                />
+              </picture>
             </li>
-            <li class="">
-              <img
-                src="./Images/about/about2.jpg"
-                alt="барбер бриє клієнта"
-                width="270"
-                height="445"
-              />
+            <li class="about__list-item">
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="
+                ./Images/about/desktop/about-img2.webp 1x,
+                ./Images/about/desktop/about-img2@2x.webp 2x
+                "
+                type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/about/desktop/about-img2.jpg 1x,
+                    ./Images/about/desktop/about-img2@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+
+                <source
+                media="(min-width: 768px)"
+                srcset="
+                ./Images/about/tablet/about-img2.webp   1x,
+                ./Images/about/tablet/about-img2@2x.webp 2x
+                "
+                type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/about/tablet/about-img2.jpg   1x,
+                    ./Images/about/tablet/about-img2@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
+                
+                <img
+                  src="./Images/about/tablet/about-img2.jpg"
+                  alt="барбер бриє клієнта"
+                />
+              </picture>
+              
             </li>
           </ul>
-          <div class="about-content-wrapper">
-            <p class="suptitle suptitle-theme-light">Про нас</p>
-            <h2 class="section-title section-title-theme-light">
+          <div class="about__content-wrapper">
+            <p class="suptitle suptitle--light">Про нас</p>
+            <h2 class="about__section-title section-title--light">
               Кращий Барбершоп твого міста
             </h2>
-            <p
-              class="section-description section-description-theme-light section-description-about"
-            >
+            <p class="about__section-description section-description--light">
               Якщо ти хочеш додати до свого образу більше впевненості – тобі
               точно до нас.
             </p>
-            <p
-              class="section-description section-description-theme-light description-about"
-            >
+            <p class="about__description section-description--light">
               Ми команда, яка ніколи не зупиняється на досягнутому та прагне
               змін. І коли ти потрапиш до рук нашого майстра, то вже ніколи не
               зможеш бути колишнім. Ми команда, яка завжди з клієнтами "на одній
@@ -169,7 +234,7 @@
             <button type="button" class="modal-btn">онлайн-запис</button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- /* -------------------------PRICES------------------------- */ -->
       <!-- <section class="section prices-section">

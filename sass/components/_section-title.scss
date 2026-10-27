@@ -1,17 +1,14 @@
 .section-title {
+  @include font(42px, 700, 49px, 5%);
   font-family: var(--secondary-font);
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 1.17;
-  letter-spacing: 5%;
 }
 
-.section-title-theme-dark {
+.section-title--dark {
   color: var(--secondary-text-color-theme-dark);
   margin-bottom: 44px;
 }
 
-.section-title-theme-light {
+.section-title--light {
   color: var(--primary-text-color-theme-light);
   margin-bottom: 20px;
 }
