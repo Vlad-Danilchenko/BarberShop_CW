@@ -294,106 +294,154 @@
 
       <!-- -------------------------ADVANTAGES-------------------------  -->
 
-      <!-- <section class="section">
-        <div class="container advantages-container">
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <p class="advantages-item-number">
-                600<span class="advantages-item-symbol">+</span>
-              </p>
-              <p class="advantages-item-description">
-                Задоволених клієнтів на день
-              </p>
-            </li>
-            <li class="advantages-item">
-              <p class="advantages-item-number">
-                50<span class="advantages-item-symbol">+</span>
-              </p>
-              <p class="advantages-item-description">
-                Нагород за відмінний сервіс
-              </p>
-            </li>
-            <li class="advantages-item">
-              <p class="advantages-item-number">
-                20<span class="advantages-item-symbol">+</span>
-              </p>
-              <p class="advantages-item-description">
-                Найкращих майстрів Києва
-              </p>
-            </li>
-            <li class="advantages-item">
-              <p class="advantages-item-number">
-                100<span class="advantages-item-symbol">+</span>
-              </p>
-              <p class="advantages-item-description">
-                Подарунків постійним клієнтам
-              </p>
-            </li>
-          </ul>
-          <div class="advantages-content-wrapper">
-            <p class="suptitle suptitle-theme-light">стара традиційна школа</p>
-            <h2
-              class="section-title section-title-theme-light advantages-title"
-            >
+      <section class="section">
+        <div class="container advantages__container">
+          <div class="advantages__content-wrapper">
+            <p class="suptitle suptitle--light">стара традиційна школа</p>
+            <h2 class="section-title section-title--light advantages-title">
               Чому приходять саме до нас?
             </h2>
             <p
-              class="section-description section-description-theme-light advantages-description"
+              class="section-description section-description--light advantages__description"
             >
               Про нас говорять лише хороше. Але краще 1 раз побачити та відчути,
               ніж 10 разів прочитати.
             </p>
           </div>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <p class="advantages__item-number">
+                600<span class="advantages__item-symbol">+</span>
+              </p>
+              <p class="advantages__item-description">
+                Задоволених клієнтів на день
+              </p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__item-number">
+                50<span class="advantages__item-symbol">+</span>
+              </p>
+              <p class="advantages__item-description">
+                Нагород за відмінний сервіс
+              </p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__item-number">
+                20<span class="advantages__item-symbol">+</span>
+              </p>
+              <p class="advantages__item-description">
+                Найкращих майстрів Києва
+              </p>
+            </li>
+            <li class="advantages__item">
+              <p class="advantages__item-number">
+                100<span class="advantages__item-symbol">+</span>
+              </p>
+              <p class="advantages__item-description">
+                Подарунків постійним клієнтам
+              </p>
+            </li>
+          </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- /* -------------------------MASTERS------------------------- */
  -->
-      <!-- <section class="masters-section section">
+      <section class="masters__section section">
         <div class="container">
-          <p class="suptitle suptitle-theme-light">
+          <p class="suptitle suptitle--light">
             для справжніх поціновувачів атмосфери
           </p>
-          <h2 class="section-title section-title-theme-light masters-title">
+          <h2 class="section-title section-title--light masters__title">
             Наші майстри
           </h2>
           <ul class="masters-list">
-            <li class="masters-item">
-              <img
-                src="./Images/employees/john-smith.jpg"
-                alt="майстер стреже клієнта"
-                width="370"
-                height="346"
-              />
-              <div class="master-card-content-wrapper">
-                <h3 lang="en" class="master-name">John Smith</h3>
-                <p lang="en" class="master-rank">Extreme Barber</p>
+            <li class="masters-list__item">
+              <picture class="masters-list__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/employees/desktop/john.webp    1x,
+                    ./Images/employees/desktop/john@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/employees/desktop/john.jpg    1x,
+                    ./Images/employees/desktop/john@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/employees/tablet/john.webp    1x,
+                    ./Images/employees/tablet/john@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/employees/tablet/john.jpg    1x,
+                    ./Images/employees/tablet/john@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./Images/employees/mobile/john.webp    1x,
+                    ./Images/employees/mobile/john@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./Images/employees/mobile/john.jpg    1x,
+                    ./Images/employees/mobile/john@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./Images/employees/john-smith.jpg"
+                  alt="майстер стреже клієнта"
+                />
+              </picture>
+
+              <div class="master-card__content-wrapper">
+                <h3 lang="en" class="master-card__name">John Smith</h3>
+                <p lang="en" class="master-card__rank">Extreme Barber</p>
 
                 <ul class="social-list">
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -401,41 +449,91 @@
                 </ul>
               </div>
             </li>
-            <li class="masters-item">
-              <img
-                src="./Images/employees/michele-doe.jpg"
-                alt="майстер стреже клієнта"
-                width="370"
-                height="346"
-              />
-              <div class="master-card-content-wrapper">
-                <h3 lang="en" class="master-name">Michele Doe</h3>
-                <p lang="en" class="master-rank">Extreme Barber</p>
+            <li class="masters-list__item">
+              <picture class="masters-list__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/employees/desktop/michele.webp    1x,
+                    ./Images/employees/desktop/michele@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/employees/desktop/michele.jpg    1x,
+                    ./Images/employees/desktop/michele@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/employees/tablet/michele.webp    1x,
+                    ./Images/employees/tablet/michele@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/employees/tablet/michele.jpg    1x,
+                    ./Images/employees/tablet/michele@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./Images/employees/mobile/michele.webp    1x,
+                    ./Images/employees/mobile/michele@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./Images/employees/mobile/michele.jpg    1x,
+                    ./Images/employees/mobile/michele@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./Images/employees/michele-doe.jpg"
+                  alt="майстер стреже клієнта"
+                />
+              </picture>
+
+              <div class="master-card__content-wrapper">
+                <h3 lang="en" class="master-card__name">Michele Doe</h3>
+                <p lang="en" class="master-card__rank">Extreme Barber</p>
                 <ul class="social-list">
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -443,41 +541,91 @@
                 </ul>
               </div>
             </li>
-            <li class="masters-item">
-              <img
-                src="./Images/employees/alan-black.jpg"
-                alt="майстер стреже клієнта"
-                width="370"
-                height="346"
-              />
-              <div class="master-card-content-wrapper">
-                <h3 lang="en" class="master-name">Alan Black</h3>
-                <p lang="en" class="master-rank">Extreme Barber</p>
+            <li class="masters-list__item">
+              <picture class="masters-list__picture">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/employees/desktop/alan.webp    1x,
+                    ./Images/employees/desktop/alan@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./Images/employees/desktop/alan.jpg    1x,
+                    ./Images/employees/desktop/alan@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/employees/tablet/alan.webp    1x,
+                    ./Images/employees/tablet/alan@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./Images/employees/tablet/alan.jpg    1x,
+                    ./Images/employees/tablet/alan@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./Images/employees/mobile/alan.webp    1x,
+                    ./Images/employees/mobile/alan@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./Images/employees/mobile/alan.jpg    1x,
+                    ./Images/employees/mobile/alan@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./Images/employees/alan-black.jpg"
+                  alt="майстер стреже клієнта"
+                />
+              </picture>
+
+              <div class="master-card__content-wrapper">
+                <h3 lang="en" class="master-card__name">Alan Black</h3>
+                <p lang="en" class="master-card__rank">Extreme Barber</p>
                 <ul class="social-list">
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="social-list-item">
-                    <a href="" class="social-list-link">
-                      <svg class="social-list-icon" width="20" height="20">
+                  <li class="social-list__item">
+                    <a href="" class="social-list__link">
+                      <svg class="social-list__icon" width="20" height="20">
                         <use href="./Images/sprite.svg#linkedin"></use>
                       </svg>
                     </a>
@@ -487,7 +635,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- /* -------------------------GALERY------------------------- */
  -->
